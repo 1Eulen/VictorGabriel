@@ -1,0 +1,195 @@
+/* Estilos para a página */
+@font-face {
+  font-family: 'Gotham';
+  src: url('font/Gotham-Black.otf') format('opentype');
+}
+
+body {
+  font-family: 'Gotham', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Estilos para a barra superior */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #000;
+  padding: 10px;
+}
+
+.user-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.user-nav li {
+  margin-left: 15px;
+}
+
+.user-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilos para a navegação principal */
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 8px;
+  color: #fff;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ccc;
+}
+
+/* Estilos para o menu dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #575757;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Estilos para a seção hero */
+.hero {
+  background-image: url("teste.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20vh 0; /* Ajustado o padding para melhor responsividade */
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.7);
+  box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+}
+
+.hero h1 {
+  font-size: 4vw; /* Ajuste em relação à largura da tela */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 2vw; /* Ajuste em relação à largura da tela */
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 40px;
+  margin-top: 20px;
+  font-size: 16px; /* Tamanho da fonte ajustado */
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #f0f0f0;
+}
+
+/* Estilos para o rodapé */
+footer {
+  color: #000;
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px; /* Ajuste do tamanho da fonte para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 15vh 0; /* Ajustado o padding para telas muito pequenas */
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 12px; /* Ajuste do tamanho da fonte para telas muito pequenas */
+  }
+}
